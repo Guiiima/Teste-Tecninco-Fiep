@@ -1,13 +1,13 @@
 :root {
-    --primary-yellow: #FFC800; 
-    --primary-blue: #0a246a;   
+    --primary-yellow: #FFC800;
+    --primary-blue: #0a246a;
     --text-light: #ffffff;
     --text-dark: #333333;
     --text-gray: #c5c1c1;
     --text-blue: #0a246a;
-    --accent-purple: #6a0dad; 
+    --accent-purple: #6a0dad;
     --accent-light-blue: #00bcd4;
-    --font-main: 'Arial', sans-serif; 
+    --font-main: 'Arial', sans-serif;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
     font-family: var(--font-main);
     color: var(--text-dark);
     line-height: 1.6;
-    background-color: var(--primary-yellow); 
+    background-color: var(--primary-yellow);
 }
 
 .container {
@@ -51,6 +51,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
+    margin: 0 !important;
     height: 100vh;
 }
 
@@ -60,9 +61,11 @@ body {
     gap: 30px;
 }
 
-.hero-image-area-left {
-    flex: 1;
-    text-align: left;
+.hero-image-area-left img {
+    max-width: 100%;
+    max-height: 300px;
+    flex-direction: column;
+    display: flex;
 }
 
 .hero-image-area-right {
@@ -74,10 +77,12 @@ body {
     h2 {
         font-size: 1.8rem;
     }
+
     .header .container {
         flex-direction: column;
         gap: 10px;
     }
+
     .header-promo {
         text-align: center;
     }
